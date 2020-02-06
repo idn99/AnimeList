@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_des"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/kny"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/tv2_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gavabon"/>
+
+        <TextView
+            android:id="@+id/tv1_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Deskripsi"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/tulis"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="1dp"
+            android:background="#bdb6b5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sinopsis"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tulis"/>
+
+        <TextView
+            android:id="@+id/tv3_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sinopsis"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/tulis"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="1dp"
+            android:background="#bdb6b5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Karakter"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tulis"
+            android:layout_marginBottom="15dp"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_karakter"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+</ScrollView>
